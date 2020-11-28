@@ -192,7 +192,7 @@ bl {
 	max-width: 100%;
 	margin: 10px 0px 0px 0px;
 	min-width: 30%;
-	transition: opacity 0.5s;
+	transition: opacity var(--time-trans);
 	border-radius: 8px;
 }
 video[canBeDark] {
@@ -224,5 +224,28 @@ img.dark, video.dark {
 	.flex[r='896'] p:not([cw]) { width: calc(100% - 375px); }
 	.flex[r='896'] *[cw] { width: calc(100% - var(--custom-width)); }
 	.flex[r='896'][reverse] p { padding-left: 0px; }
+}
+
+.hs-style-btn {
+	position:absolute;
+	display:block;
+	width:44px;
+	height:44px;
+	border-radius:4px;
+	top:4px;
+	left:4px;
+	margin:2px;
+	z-index:2;
+	border:none;
+	outline:none;
+	background-color:rgba(0, 0, 0, 0.54);
+	cursor:pointer;
+}
+.hs-style-btn i {
+	color:white;
+	font-size:32px;
+	position:relative;
+	top:-1px;
+	left:-0px;
 }
 
